@@ -71,7 +71,14 @@ Copiar los archivos csv provistos a HDFS:
 ```
   hdfs dfs -put /home/Datasets/* /data
 ```
-
+Para verificar que los archivos se hayan copiado correctamente: 
+```
+sudo docker exec -it namenode bash
+ls /home/Datasets/
+```
+```
+ls ~/DS-M4-Herramientas_Big_Data/Datasets/
+```
 Este proceso de creación de la carpeta data y copiado de los arhivos, debe poder ejecutarse desde un shell script.
 
 Nota: Busque dfs.blocksize y dfs.replication en http://<IP_Anfitrion>:9870/conf para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
