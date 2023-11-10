@@ -51,6 +51,8 @@ Copiar los archivos ubicados en la carpeta Datasets, dentro del contenedor "name
   mkdir Datasets
   exit
   sudo docker cp <path><archivo> namenode:/home/Datasets/<archivo>
+sudo docker cp ~/DS-M4-Herramientas_Big_Data/Datasets/. namenode:/home/Datasets/
+
 ```
 
 Ubicarse en el contenedor "namenode"
