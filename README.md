@@ -51,7 +51,7 @@ Copiar los archivos ubicados en la carpeta Datasets, dentro del contenedor "name
   mkdir Datasets
   exit
   sudo docker cp <path><archivo> namenode:/home/Datasets/<archivo>
-sudo docker cp ~/DS-M4-Herramientas_Big_Data/Datasets/. namenode:/home/Datasets/
+** sudo docker cp ~/DS-M4-Herramientas_Big_Data/Datasets/. namenode:/home/Datasets/
 
 ```
 
@@ -71,10 +71,10 @@ Copiar los archivos csv provistos a HDFS:
 ```
   hdfs dfs -put /home/Datasets/* /data
 ```
-Para verificar que los archivos se hayan copiado correctamente: 
+** Para verificar que los archivos se hayan copiado correctamente: 
 ```
-sudo docker exec -it namenode bash
-ls /home/Datasets/
+** sudo docker exec -it namenode bash
+** ls /home/Datasets/
 ```
 ```
 ls ~/DS-M4-Herramientas_Big_Data/Datasets/
